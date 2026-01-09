@@ -27,10 +27,7 @@ Route::middleware('auth')->group(function () {
 
 
 Route::get('/', function () {
-    return response()->json([
-        'message' => 'Task Manager API is running',
-        'status' => 'ok'
-    ]);
-    });
+    return response()->json(['message' => 'Task Manager API running']);
+});
 
 require __DIR__.'/auth.php';
